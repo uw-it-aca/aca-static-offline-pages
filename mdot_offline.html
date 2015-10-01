@@ -1,119 +1,85 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>UW Mobile Outage</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html>
 
-<head>
-<title>UW Mobile Outage</title>
 
-<!-- begin UW header/footer gen -->
-<link rel="stylesheet" href="http://depts.washington.edu/uweb/inc/css/header.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="http://depts.washington.edu/uweb/inc/css/print.css" type="text/css" media="print" />
-<link rel="stylesheet" href="http://depts.washington.edu/uweb/inc/css/footer.css" type="text/css" media="screen" />
-<script type="text/javascript">
-// clear out the global search input text field
-function make_blank() {if(document.uwglobalsearch.q.value=="Search the UW") {document.uwglobalsearch.q.value = "";}}
-</script>
-<!-- end UW header/footer gen -->
+		<script type='text/javascript' src='js/jquery.min.js'></script>
+		<script type='text/javascript' src='js/underscore.min.js'></script>
+		<script type='text/javascript' src='js/backbone.min.js'></script>
+		<script src="https://uw.edu/assets/uw.js"></script>
+		<link rel="stylesheet" href="https://uw.edu/assets/uw.css">
+        <link rel="stylesheet" href="css/mini.css">
+		<link rel="stylesheet" href="assets/offline.css">
 
-<style>
-body {color: $#444444;
-	font-family: verdana, sans-serif;
-	line-height: 1.5em;
-	}
 
-h1 {color: #999999;
-	font-size: 218%;
-	font-weight: normal;
-	line-height: 38px;
-	margin-top: 50px;
-	}
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js" type="text/javascript"></script>
+            <script src="js/respond.js" type="text/javascript"></script>
+            <link rel='stylesheet' href='css/ie.css' type='text/css' media='all' />
+        <![endif]-->
+    </head>
+    <body>
 
-#container {position: absolute;
-	min-height: 100%;
-}
 
-#content {margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-	width: 750px;
-	padding: 20px;
-	}
 
-#footer {
-	margin-bottom: 0;
-	height: 100px;
-}
+		<div id="uw-container">
 
-</style>
 
-</head>
 
-<body>
+		    <div id="uw-container-inner">
+		        <header class="uw-thinstrip">
+		            <nav class="uw-thin-strip-nav">
+		                <ul class="uw-thin-links">
+		                    <li>
+		                        <a href="http://myuw.washington.edu" title=
+		                        "MyUW">MyUW</a>
+		                    </li>
 
-<!-- begin UW header/footer gen -->
-<div id="wheader" class="colorPurple wNo patchNo">
- <span id="autoMargin">
-  <div class="wlogoSmall">
-   <div class="logoAbsolute"><a id="wlogoLink" href="http://www.washington.edu/">W</a></div>
-   <div><a href="http://www.washington.edu/">University of Washington</a></div>
-  </div>
-  <div id="wsearch">
-   <form name="uwglobalsearch" id="searchbox_001967960132951597331:04hcho0_drk" action="http://www.google.com/cse">
-    <div class="wfield">
-     <input type="hidden" name="cx" value="001967960132951597331:04hcho0_drk" />
-     <input type="hidden" name="cof" value="FORID:0" />
-     <input name="q" type="text" value="Search the UW" class="wTextInput" onclick="make_blank();" />
-    </div>
-    <input type="submit" class="formbutton" name="sa" value="Go" />
-   </form>
-  </div>
-  <div id="wtext">
-   <ul>
-    <li><a href="http://www.washington.edu/">UW Home</a></li>
-    <li><span class="wborder"><a href="http://www.washington.edu/home/directories.html">Directories</a></span></li>
-    <li><span class="wborder"><a href="http://www.washington.edu/visit/events.html">Calendar</a></span></li>
-    <li><span class="wborder"><a href="http://www.washington.edu/maps/">Maps</a></span></li>
-    <li><span class="wborder"><a href="http://myuw.washington.edu/">My UW</a></span></li>
-   </ul>
-  </div>
- </span>
-</div>
-<!-- end UW header/footer gen -->
+		                    <li>
+		                        <a href="http://uw.edu/calendar" title=
+		                        "UW Calendar">Calendar</a>
+		                    </li>
 
-<div id="containter">
-<div id="content">
-<img src="images/logo.png" />
-<h1>UW Mobile Outage</h1>
+		                    <li>
+		                        <a href="http://uw.edu/maps" title=
+		                        "UW Maps">Maps</a>
+		                    </li>
 
-<p><strong>UW Mobile is currently experiencing an unplanned outage.</strong></p>
-<p>Our engineers are hard at work to restore service as quickly as possible. Thank you for your patience.</p>
-<p>If you have questions or concerns, please send an email to <a href="mailto:help@uw.edu">help@uw.edu</a>.</p>
-</div>
-</div>
+		                    <li>
+		                        <a href="http://uw.edu/directory" title=
+		                        "UW Directories">Directories</a>
+		                    </li>
+		                </ul>
+		            </nav>
 
-<div id="footer">
-<!-- begin UW header/footer gen -->
-<div id="footerMain" class="purple">
- <div id="footerWrap">
-  <div id="footerLogo">
-   <a id="wlogoLink" href="http://www.washington.edu/">University of Washington</a>
-  </div>
-  <div id="footerLinks">
-   <div class="logoAbsoluteFooter"></div>
-   <h3>Discover what's next. It's the Washington Way</h3>
-   <ul>
-    <li class="leftText"><span>&#169; 2010 University of Washington</span></li>
-    <li class="centerText"><span>Seattle, Washington</span></li>
-    <li class="centerText"><a href="http://www.washington.edu/home/siteinfo/form/">Contact Us</a></li>
-    <li class="rightText"><a href="http://www.washington.edu/jobs/">Employment</a></li>
-    <li class="rightText"><a href="http://myuw.washington.edu/">My UW</a></li>
-   </ul>
-  </div>
- </div>
-</div>
-<!-- end UW header/footer gen -->
-</div>
+		            <div class="container">
+		                <a class="uw-patch" href="http://uw.edu" tabindex="-1" title=
+		                "University of Washington Home">Home</a> <a class="uw-wordmark"
+		                href="http://uw.edu" title=
+		                "University of Washington Home">Home</a>
+		            </div>
+		        </header>
 
-</body>
 
+		    </div>
+		</div>
+
+		<div class='offline-container'>
+			<img class="offline-logo" src="assets/img/logo.png">
+			<h1>UW Mobile Outage</h1>
+			<p><strong>UW Mobile is currently experiencing an unplanned outage.</strong></p>
+			<p>Our engineers are hard at work to restore service as quickly as possible. Thank you for your patience.</p>
+			<p>If you have questions or concerns, please send an email to <a href="mailto:help@uw.edu">help@uw.edu</a>.</p>
+		</div>
+		<div class="uw-thinstrip"></div>
+    </body>
 </html>
